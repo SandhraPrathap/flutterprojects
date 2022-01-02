@@ -15,14 +15,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Column(
+            child: Center(
+              child: Column(mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget> [
-            CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage('images/dino.jpg'),
-            )
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/dino.jpg'), 
+              ),
+              Text("Sandhra Prathap",style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.bold),)
           ],
-        )),
+        ),
+            )),
       ),
     );
   }
