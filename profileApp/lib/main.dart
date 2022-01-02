@@ -16,16 +16,33 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Center(
-              child: Column(mainAxisAlignment: MainAxisAlignment.center,
-          children:<Widget> [
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
               CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage('images/dino.jpg'), 
+                backgroundImage: AssetImage('images/dino.jpg'),
               ),
-              Text("Sandhra Prathap",style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.bold),)
-          ],
-        ),
-            )),
+              Text(
+                "Sandhra Prathap",
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico'),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.teal[100],
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'SourceSansPro',
+                    letterSpacing: 2.5),
+              )
+            ],
+          ),
+        )),
       ),
     );
   }
