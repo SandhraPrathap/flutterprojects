@@ -39,7 +39,46 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: 'SourceSansPro',
                     letterSpacing: 2.5),
-              )
+              ),
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(color: Colors.teal[100],),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "7306461060",
+                    style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20,
+                        color: Colors.teal[900]),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "sandhraprathap@gmail.com",
+                    style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20,
+                        color: Colors.teal[900]),
+                  ),
+                ),
+              ),
             ],
           ),
         )),
